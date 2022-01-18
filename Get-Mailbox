@@ -1,0 +1,60 @@
+Get-Mailbox
+
+Módulo:
+ExchangePowerShell
+
+Se aplica a: Exchange Server 2010, Exchange Server 2013, Exchange Server 2016, Exchange Server 2019, Exchange Online
+Este cmdlet está disponible en Exchange local y en el servicio basado en la nube. Algunos parámetros y configuraciones pueden ser exclusivos de un entorno u otro.
+
+Use el cmdlet Get-Mailbox para 
+
+* Ver objetos y atributos de buzón 
+* Rellenar páginas de propiedades 
+* Proporcionar información de buzón a otras tareas.
+
+Nota:En Exchange Online PowerShell, se recomienda usar el cmdlet Get-EXOMailbox en lugar de este cmdlet. 
+Para obtener más información, vea Conectarse a Exchange Online PowerShell.
+
+Descripción
+Cuando se usa el cmdlet Get-Mailbox en entornos de Exchange locales para ver la configuración de cuota de un buzón, 
+primero debe comprobar el valor de la propiedad UseDatabaseQuotaDefaults. El valor True significa que se omite la configuración de cuota por buzón y 
+debe usar el cmdlet Get-MailboxDatabase para ver los valores reales. Si la propiedad UseDatabaseQuotaDefaults es False, se usa la configuración de cuota por buzón, 
+por lo que lo que se ve con el cmdlet Get-Mailbox son los valores de cuota reales para el buzón.
+
+Debe tener permisos asignados antes de poder ejecutar este cmdlet. Aunque en este tema se enumeran todos los parámetros del cmdlet, es posible 
+que no tenga acceso a algunos parámetros si no se incluyen en los permisos que se le asignan. Para encontrar los permisos necesarios para ejecutar 
+cualquier cmdlet o parámetro de la organización, consulte Buscar los permisos necesarios para ejecutar cualquier cmdlet de Exchange.
+
+Ejemplo 1
+
+Get-Mailbox -ResultSize unlimited
+En este ejemplo se devuelve una lista resumida de todos los buzones de la organización.
+
+Ejemplo 2
+
+Get-Mailbox -OrganizationalUnit Users
+En este ejemplo se devuelve una lista de todos los buzones de la organización en la unidad organizativa Usuarios.
+
+Ejemplo 3
+
+Get-Mailbox -Anr Chr
+En este ejemplo se devuelven todos los buzones que se resuelven a partir de la búsqueda de resolución de nombres ambiguos en la cadena "Chr". 
+En este ejemplo se devuelven buzones para usuarios como Chris Ashton, Christian Hess y Christa Geller.
+
+Ejemplo 4
+
+Get-Mailbox -Archive -Server Mailbox01
+En este ejemplo se devuelve una lista resumida de todos los buzones de archivo del servidor de buzones denominado Mailbox01.
+
+Ejemplo 5
+
+Get-Mailbox -Identity ed@contoso.com -RemoteArchive
+En este ejemplo se devuelve información sobre el buzón de archivo remoto para el usuario ed@contoso.com.
+
+Source ...
+
+https://docs.microsoft.com/en-us/powershell/module/exchange/get-mailbox?view=exchange-ps
+
+
+
+
