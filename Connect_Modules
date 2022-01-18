@@ -1,0 +1,44 @@
+From a computer with an internet connection open PowerShell (preferably as an administrator)
+
+Para encontar los modulos asociados 
+Find-Module -Name < Modulo asociado para buscar >
+Find-Module -Name ExchangeOnlineManagement
+
+Para installar los modulos
+Install-Module -Name <Modulo a instalar > -Scope AllUsers
+Install-Module -Name ExchangeOnlineManagement -Scope AllUsers
+
+
+Lista el moduclo con todos su parametros modulo ... 
+Get-Command -Module ExchangeOnlineManagement
+
+SOURCE : https://thesysadminchannel.com/how-to-install-exchange-online-powershell-module/
+
+EXCHANGE ON LINE *****************************************************************************************************
+
+Connect-ExchangfineOnline -UserPrincipalName j.espinoza@brassart.fr
+
+EXCHANGE *****************************************************************************************************
+
+$UserCredential = Get-Credential
+$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
+Import-PSSession $Session
+
+AZURE AD *****************************************************************************************************
+
+Install-Module -Name AzureAD
+Connect-AzureAD
+
+MSONLINE *****************************************************************************************************
+
+Install-Module -Name MSOnline
+Import-Module MSOnline
+Connect-MSOLService
+
+TEAMS *****************************************************************************************************
+
+Install-Module -Name MicrosoftTeams -Force
+Import-Module MicrosoftTeams
+Connect-MicrosoftTeams
+
+   
