@@ -1,0 +1,40 @@
+Reglas Mensajeria
+
+Este cmdlet está disponible en Exchange local y en el servicio basado en la nube. Algunos parámetros y configuraciones pueden ser exclusivos de un entorno u otro.
+
+Use el cmdlet Get-InboxRule para ver las propiedades de la regla Bandeja de entrada. Las reglas de la Bandeja de entrada se utilizan para procesar mensajes 
+en la Bandeja de entrada en función de las condiciones especificadas y realizar acciones como mover un mensaje a una carpeta especificada o eliminar un mensaje.
+
+Para obtener información acerca de los conjuntos de parámetros de la sección Sintaxis siguiente, consulte Sintaxis del cmdlet de Exchange.
+
+Descripción
+Debe tener permisos asignados antes de poder ejecutar este cmdlet. Aunque en este tema se enumeran todos los parámetros del cmdlet, es posible que no tenga 
+acceso a algunos parámetros si no se incluyen en los permisos que se le asignan. Para encontrar los permisos necesarios para ejecutar cualquier cmdlet o 
+parámetro de la organización, consulte Buscar los permisos necesarios para ejecutar cualquier cmdlet de Exchange.
+
+Nota:Este cmdlet no funciona para los miembros del grupo de roles Administración de la organización de solo vista en Exchange Online o el rol Lector global en 
+Azure Active Directory.
+
+Ejemplo 1
+
+Get-InboxRule -Mailbox Joe@Contoso.com
+
+En este ejemplo se recuperan todas las reglas de la Bandeja de entrada para el buzón Joe@Contoso.com.
+
+Ejemplo 2
+
+Get-InboxRule "ReceivedLastYear" -Mailbox joe@contoso.com -DescriptionTimeFormat "mm/dd/yyyy" -DescriptionTimeZone "Pacific Standard Time"
+
+En este ejemplo se recupera la regla de bandeja de entrada ReceivedLastYear del joe@contoso.com de buzón en el que se estableció el parámetro 
+ReceivedBeforeDate cuando se creó la regla. Los parámetros DescriptionTimeFormat y DescriptionTimeZone se utilizan en este ejemplo para especificar el 
+formato de la hora y la zona horaria utilizadas en la propiedad Description de la regla.
+
+source:
+
+https://docs.microsoft.com/en-us/powershell/module/exchange/get-inboxrule?view=exchange-ps
+
+
+
+
+
+
