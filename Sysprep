@@ -1,0 +1,12 @@
+MODE AUDIT 
+/audit
+
+Sysprep /audit
+
+MODE PERSONALIZADO
+/oobe
+
+Sysprep /generalize /shutdown /oobe
+
+
+https://docs.microsoft.com/en-us/windows-hardware/manufacture/desktop/sysprep-command-line-options?view=windows-11
