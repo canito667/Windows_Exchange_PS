@@ -1,5 +1,7 @@
 Reglas Mensajeria
 
+Get-InboxRule (Revisa las reglas Outlook)
+
 Este cmdlet está disponible en Exchange local y en el servicio basado en la nube. Algunos parámetros y configuraciones pueden ser exclusivos de un entorno u otro.
 
 Use el cmdlet Get-InboxRule para ver las propiedades de la regla Bandeja de entrada. Las reglas de la Bandeja de entrada se utilizan para procesar mensajes 
