@@ -41,4 +41,13 @@ Install-Module -Name MicrosoftTeams -Force
 Import-Module MicrosoftTeams
 Connect-MicrosoftTeams
 
+Sources
+Connect to Exchange servers using remote PowerShell
+https://docs.microsoft.com/en-us/powershell/exchange/connect-to-exchange-servers-using-remote-powershell?view=exchange-ps
+
+Compte Inactif
+https://answers.microsoft.com/fr-fr/outlook_com/forum/all/compte-inactif/327a3efd-2f82-4e04-aa47-c0b96fa21835
+
+
+
    
