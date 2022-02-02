@@ -1,0 +1,19 @@
+Creation Groupe List
+
+New-DistributionGroup -Name "EFAP_paris_groupe_301_21-22" -Type "Distribution"
+
+-Type
+The Type parameter specifies the type of group that you want to create. Valid values are:
+
+Distribution   : A distribution group. These groups can't have permissions assigned. This is the default value.
+Security       : A mail-enabled security group. These groups can have permissions assigned.
+
+SOURCE
+https://docs.microsoft.com/en-us/powershell/module/exchange/new-distributiongroup?view=exchange-ps
+
+Add member to group list.
+
+Import-Csv -Path "C:\CSV_Aut_acc\template.csv" | ForEach-Object {Add-DistributionGroupMember -Identity $_.LD  -Member $_.User}
+
+SOURCE
+https://docs.microsoft.com/fr-fr/powershell/module/exchange/?view=exchange-ps#users-and-groups
