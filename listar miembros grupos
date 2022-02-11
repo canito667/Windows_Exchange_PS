@@ -1,0 +1,5 @@
+$name= Read-Host -Prompt "Enter your name"
+ 
+# Write-Host "the name is " $name -ForegroundColor Green
+
+Get-DistributionGroupMember -Identity $name | select name, recipientType, PrimarySMTPAddress | Export-Csv "C:\CSV_Aut_acc\newlistes.csv" -NoTypeInformation -Encoding UTF8
