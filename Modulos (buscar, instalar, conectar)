@@ -16,7 +16,11 @@ SOURCE : https://thesysadminchannel.com/how-to-install-exchange-online-powershel
 
 EXCHANGE ON LINE *****************************************************************************************************
 
-Connect-ExchangfineOnline -UserPrincipalName j.espinoza@brassart.fr
+Connect-ExchangeOnline 
+
+Or 
+
+Connect-ExchangeOnline -UserPrincipalName j.espinoza@brassart.fr
 
 EXCHANGE *****************************************************************************************************
 
