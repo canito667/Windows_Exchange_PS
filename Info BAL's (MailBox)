@@ -1,5 +1,10 @@
 Get-Mailbox
 
+SOURCES
+-  https://docs.microsoft.com/en-us/powershell/module/exchange/get-mailbox?view=exchange-ps
+++ https://theitbros.com/get-mailbox/ 
+
+
 Módulo:
 ExchangePowerShell
 
@@ -50,11 +55,4 @@ Ejemplo 5
 
 Get-Mailbox -Identity ed@contoso.com -RemoteArchive
 En este ejemplo se devuelve información sobre el buzón de archivo remoto para el usuario ed@contoso.com.
-
-Source ...
-
-https://docs.microsoft.com/en-us/powershell/module/exchange/get-mailbox?view=exchange-ps
-
-
-
 
