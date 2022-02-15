@@ -1,0 +1,7 @@
+grep en powershell
+
+https://adamtheautomator.com/powershell-grep/
+
+select-string
+
+tasklist | Select-String "adobe"
