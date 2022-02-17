@@ -1,7 +1,16 @@
-grep en powershell
-
+GREP POWERSHELL
+select-string
+tasklist | Select-String "adobe"
 https://adamtheautomator.com/powershell-grep/
 
-select-string
+CLEAN AZURE ID PC CLIENT
+Cambiar el nombre del complemento de autenticación de Azure Active Directory
+De forma predeterminada, Outlook o más bien debería decir Office 365 en Windows 10 V1703 o posterior usa la autenticación basada en el marco de la Biblioteca de autenticación 
+de Azure Active Directory (ADAL). Microsoft dice que la compilación de Office 16.0.7967 o posterior usa web Account Manager (WAM) para los flujos de trabajo de inicio de sesión. 
+Este problema se puede solucionar cambiando el nombre del complemento utilizado para el propósito de autenticación. Debe iniciar sesión con una cuenta diferente o realizar esta 
+solución desde un recurso compartido de red y asegurarse de que el cliente que se enfrenta a esta cuenta haya cerrado la sesión. A continuación, pruebe estos pasos:
 
-tasklist | Select-String "adobe"
+1. Presione W8K + R y escriba y presione la tecla Intro o haga clic en Aceptar.%appdata%\Local\Packages
+2. En la carpeta Paquetes, cambie el nombre a .Microsoft.AAD.BrokerPlugin_cw5n1h2txyewyMicrosoft.AAD.BrokerPlugin_cw5n1h2txyewy.old
+3. Tenga en cuenta que la carpeta se volverá a crear automáticamente tan pronto como el cliente afectado inicie sesión. Inicie Outlook y permita que la organización administre el dispositivo. Si recibe algún error de TPM, ignórelo y continúe usando Outlook. Es posible que el error ya no aparezca entonces.Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy
+https://www.kapilarya.com/fix-your-computers-trusted-platform-module-has-malfunctioned-80090016
