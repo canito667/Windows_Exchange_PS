@@ -1,0 +1,16 @@
+https://www.kapilarya.com/fix-your-computers-trusted-platform-module-has-malfunctioned-80090016
+
+
+
+FIX 2 – Rename Azure Active Directory Authentication Plugin
+By default, Outlook or rather should I say Office 365 on Windows 10 V1703 or later uses Azure Active Directory Authentication Library (ADAL) framework-based authentication. 
+Microsoft says, Office build 16.0.7967 or later, uses Web Account Manager (WAM) for sign-in workflows. This issue can be fixed by renaming the plugin used for the authentication 
+purpose. You need to sign in with different account or perform this workaround from a network share and make sure the client facing this account is signed off. 
+Then try these steps:
+
+1. Press W8K + R and type %appdata%\Local\Packages and press Enter key or click OK.
+
+2. Under Packages folder, rename the Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy to Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy.old.
+
+3. Note that Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy folder will be automatically recreated as soon as the affected client log in. Start Outlook and allow organization to 
+manage the device. If you get any TPM error, ignore it and continue using Outlook. The error may no longer appearing then.
