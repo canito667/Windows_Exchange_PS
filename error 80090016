@@ -1,6 +1,6 @@
+1 ----------------------------------------------------
+
 https://www.kapilarya.com/fix-your-computers-trusted-platform-module-has-malfunctioned-80090016
-
-
 
 FIX 2 – Rename Azure Active Directory Authentication Plugin
 By default, Outlook or rather should I say Office 365 on Windows 10 V1703 or later uses Azure Active Directory Authentication Library (ADAL) framework-based authentication. 
@@ -14,3 +14,9 @@ Then try these steps:
 
 3. Note that Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy folder will be automatically recreated as soon as the affected client log in. Start Outlook and allow organization to 
 manage the device. If you get any TPM error, ignore it and continue using Outlook. The error may no longer appearing then.
+
+
+
+2 ---------------------------------------------------
+
+https://koroglutech.com/fr/articles/23103-fix--error-code-80090016-in-microsoft-teams-trusted-platfor
