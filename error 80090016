@@ -15,8 +15,11 @@ Then try these steps:
 3. Note that Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy folder will be automatically recreated as soon as the affected client log in. Start Outlook and allow organization to 
 manage the device. If you get any TPM error, ignore it and continue using Outlook. The error may no longer appearing then.
 
+2 --------------------------------------------------
+
+https://docs.microsoft.com/fr-fr/office/troubleshoot/activation/reset-office-365-proplus-activation-state
 
 
-2 ---------------------------------------------------
+3 ---------------------------------------------------
 
 https://koroglutech.com/fr/articles/23103-fix--error-code-80090016-in-microsoft-teams-trusted-platfor
