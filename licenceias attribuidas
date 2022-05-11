@@ -1,0 +1,12 @@
+https://docs.microsoft.com/en-us/microsoft-365/enterprise/view-account-license-and-service-details-with-microsoft-365-powershell?view=o365-worldwide
+
+
+Install-Module -Name Microsoft.Graph.Users
+
+Import-Module Microsoft.Graph.Users
+
+Connect-MgGraph
+
+Get-MgUserLicenseDetail -UserId j.espinoza@brassart.fr
+
+
